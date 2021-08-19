@@ -1,0 +1,36 @@
+{
+  "name": "@vildaberper/vstate",
+  "version": "1.0.1",
+  "description": "A simple subscribable state container.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.js.map",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publ": "yarn publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vildaberper/vstate.git"
+  },
+  "keywords": [
+    "state",
+    "container",
+    "manager",
+    "store",
+    "simple"
+  ],
+  "author": "vildaberper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vildaberper/vstate/issues"
+  },
+  "homepage": "https://github.com/vildaberper/vstate#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
