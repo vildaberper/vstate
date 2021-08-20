@@ -10,11 +10,20 @@ import vState from "@vildaberper/vstate";
 const state = vState({
   loading: false,
   title: "hello",
+  nested: {
+    property: 1,
+  },
 });
 
-// Access & assign:
+// Read from state:
 const loading = state.loading;
+
+// Update state:
 state.loading = true;
+
+// Use dispatch for nested properties:
+state.nested.property = 2;
+state.dispatch("nested");
 
 // Fully typed subscriber callback:
 const unsubscribe = state.subscribe(
