@@ -12,6 +12,10 @@ const state = vState({
   title: "hello",
 });
 
+// Access & assign:
+const loading = state.loading;
+state.loading = true;
+
 // Fully typed subscriber callback:
 const unsubscribe = state.subscribe(
   (title, prevTitle, key) => {
